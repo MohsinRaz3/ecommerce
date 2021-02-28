@@ -1,0 +1,62 @@
+.carousel-caption{
+    color: black;
+    height: 133px;
+    text-align: left;
+    font-size: 5px;
+    font-family: 'Montserrat', sans-serif;
+   
+}
+
+.carousel-item{
+
+    background: black;
+    opacity: 0.9;
+    
+
+}
+
+
+.carousel-item img{
+
+    background: black;
+    opacity: 0.7;
+}
+.MuiButton-root{
+    font-size: 3px;
+}
+@media only screen and  (max-width: 1000px) {
+    .carousel-caption{
+       
+        height: 100px;
+        text-align: left;
+        font-family: 'Montserrat', sans-serif;
+    }
+    .carousel-caption h2{
+        font-size: 22px;
+        font-weight: 700;
+    }
+    .carousel-item img{
+        width: 100%;
+        height: 70vh;
+    }
+    .carousel-caption h4{
+        font-size: 18px;
+    }
+    }
+    @media only screen and  (max-width: 730px){
+   .carousel-caption h2{
+        font-size: 15px;
+        font-weight: 700;
+    }
+    .carousel-item img{
+        height: 50vh;
+    }
+    .carousel-caption h4{
+        font-size: 14px;
+    }
+    } 
+    @media only screen and  (max-width: 730px){
+        .carousel-item img{
+            height: 40vh;
+        }
+    }

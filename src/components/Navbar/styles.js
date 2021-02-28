@@ -11,6 +11,12 @@ export default makeStyles((theme) => ({
       marginLeft: drawerWidth,
     },
   },
+  buttonpad: {
+    padding: '0px 30px',
+    background: 'none',
+    fontWeight:"600"
+    
+  },
   title: {
     flexGrow: 1,
     alignItems: 'center',

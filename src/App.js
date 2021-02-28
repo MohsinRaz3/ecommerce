@@ -4,6 +4,11 @@ import Navbar from './components/Navbar/Navbar';
 import { commerce} from './lib/commerce';
 import Cart from './components/Cart/Cart';
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
+import CarouselContainer from './components/CarouselContainer';
+import Pricing from './components/Footer.js';
+import SignIn from './components/SignIn.js';
+import ContactUs from './components/Contact/Contact.js';
+import SignUp from './components/SignUp';
 
  const App = () => {
      const [products, setProducts] = useState([]);
@@ -56,12 +61,27 @@ import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
             <Switch>
 
                 <Route exact path="/">
+                    <CarouselContainer/>
                 <Products products={products} onAddToCart={handleAddToCart}/>
+                <Pricing/>
                 </Route>
 
                 <Route exact path ='/cart'>
                 <Cart cart={cart} handleUpdateCartQty={handleUpdateCartQty} handleRemoveFromCart={handleRemoveFromCart} handleEmptyCart={handleEmptyCart}/>
                 </Route>
+
+                <Route exact path ='/SignIn'>
+                    <SignIn/>
+                </Route>
+
+                <Route exact path ='/ContactUs'>
+                    <ContactUs/>
+                </Route>
+
+                <Route exact path ='/SignUp'>
+                    <SignUp/>
+                </Route>
+                
 
 
            </Switch>
